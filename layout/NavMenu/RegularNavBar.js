@@ -1,7 +1,7 @@
 import { GetIcon } from "./GetIcon";
 import { koana_logo } from "../../assets/images/icons";
 import styles from "./RegularNavBar.module.scss";
-import Image from "next/image";
+import Image from "next/future/image";
 import { useRouter } from "next/router";
 
 const RegularNavBar = () => {
@@ -10,18 +10,13 @@ const RegularNavBar = () => {
 
   const koanaIcon = (
     <div key={"koanaIcon"} className={styles.regularKoanaIcon}>
-      <div className={styles.koanaImg}>
-        <Image
-          objectFit="contain"
-          layout="fill"
-          className={styles.KoanaLogo}
-          onClick={() => {
-            router.replace("/");
-          }}
-          src={koana_logo}
-          alt="logo"
-        />
-      </div>
+      <Image
+        onClick={() => {
+          router.replace("/");
+        }}
+        src={koana_logo}
+        alt="logo"
+      />
     </div>
   );
 

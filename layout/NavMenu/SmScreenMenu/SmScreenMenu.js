@@ -1,6 +1,6 @@
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+import Image from "next/future/image";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useRef, useState } from "react";
 // import { useNavigate, useLocation } from "react-router-dom";
@@ -54,7 +54,7 @@ const SmScreenMenu = () => {
   );
 
   const koanaIcon = (
-    <div key={"koanaIcon"} className="koanaIcon">
+    <div key={"koanaIcon"} className={styles.koanaIcon}>
       <Image
         onClick={() => {
           router.replace(`/`);
