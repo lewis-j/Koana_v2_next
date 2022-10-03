@@ -1,0 +1,10 @@
+.navFloat {
+  position: fixed;
+  padding-top: 0.5rem;
+  width: 100%;
+  /* background-color: white; */
+  color: rgb(135, 135, 135);
+  margin-top: none;
+  margin-top: -0.5rem;
+  z-index: 1;
+}
